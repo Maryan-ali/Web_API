@@ -2,29 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Quiz</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coding Quiz App</title>
     <link rel="stylesheet" href="./Assets/style.css">
     <script defer src="./Assets/script.js"></script> 
 </head>
 
-<body class="correct">
-    <div id="question-container" class="hide"></div>
-    <div id="question">Question</div>
-    <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
-        <button class="btn">Answer 5</button>
-    </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
+<body>
+    <div class ="start-btn"><button>Start Quiz</button></div>
+
+    <div class="info_box">
+        <div class = "info_title">
+            <span> Rules:</span>
+        </div>
+        <div class = "info_list">
+            <div class="info">1.This is a timed quiz. You will have only <span>10 seconds</span> per question.</div>
+            <div class="info">2.You will be scored.</div>
+            <div class="info">3.Click the start button to begin the quiz.</div>
+    
+        </div>
+        <div class ="buttons">
+            <button class = "quit">Cancel</button>
+            <button class = "restart">Continue</button>
+        </div>
     </div>
 
-    
-     
+    <div class="quiz_box">
+        <header> 
+            <div class="title">Coding Quiz</div>
+            <div class="timer">
+                <div class="time_text"> Time left</div>
+                <div class="timer_sec">10</div>
+            </div>
+        </header>
+        <section>
+            <div class="que_text">
+                <span> What does DOM stand for?</span>
+            </div>
+            <div class="option_list">
+                <div class="option">
+                    <span>Document Operation Manager</span>
+                </div>
+                <div class="option">
+                    <span>Document Object Model</span>
+                    
+                </div>
+                <div class="option">
+                    <span>Display Operation Method</span>
+                    
+                </div>
+                <div class="option">
+                    <span>Display Object Manager</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="total_question">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next_btn hide">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icons">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You are done!</div>
+        <div class="score_text">
+            <span>You've got <p>2</p>out of<p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">End Quiz</button>
+        </div>
+    </div>
 </body>
 </html>
